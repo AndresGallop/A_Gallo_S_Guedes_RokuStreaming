@@ -1,0 +1,46 @@
+Flashback App
+
+Functionalities:
+
+USER PROFILE
+	• Parent (Admin)
+		- Design style: Professional + Fun
+		- Access all content + Admin controls¹
+	 	  ¹Admin rights allow parents to customize kid-friendly contents by rating, age tags and genre.
+
+	• Kids
+		- Design style: Playful
+		- Access kid-friendly content only
+		- 3 sections: TV, Movies, Music
+
+---------------------------------
+
+COMMON FUNCTIONALITIES
+
+- Streaming: Movies, TV Channels, Music;
+
+- Each section divided by decade:  1950, 1960, 1970, 1980, and 1990 respectively.
+
+- Rate/Like and comment on user's selections
+
+- Share button(Links? Social Media?)
+
+- Error message should media fail to load
+
+- Error message should login attempt fail
+
+---------------------------------
+
+IMPLEMENTATION IDEAS
+
+- Start up with a login screen
+
+- If user logs in as parent/admin, direct them to a profile selection screen that contains all of the profiles linked to their account
+
+- Elsewise, direct them to a profile selection that contains only the kids profiles within the same account
+
+- Clicking on a regular profile directs the user to a netflix-like dashboard with 3 carrousels, each filled with thumbnails from their respective categories and all of these clickable and linking to a video/music file.
+
+- Clicking on a kids profile directs the user to a more kid-friendly dashboard (think nick+ or something similar) that builds up on the regular one, but with colorful backgrounds and playful iconography to make navigation more intuitive and engaging for younger audiences.
+
+- Kids dashboard should have more micro-interactions with graphical assets and icons, while regular dashboard should look more like the regular roku sticks interfaces.
