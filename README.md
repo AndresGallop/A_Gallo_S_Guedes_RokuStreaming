@@ -2,7 +2,7 @@
 
 ## Intro
 This is a project that aims to create a new app under the Roku umbrella, called Roku Flashback. It's a streaming app focused on retro content produced up till the late 90s. All the relevant content is to be pulled from a database with PHP and Vue.JS, in accordance with the project requirements, and appropriately styled with SCSS/SASS.
-For more detailed information about the scope and current status of the project's development, refer to it's [DESIGN DOCUMENT](https://docs.google.com/document/d/1PotuLRZd_NACGDrCuLhelIapcthBduG3xjNqrJ7mCSo/edit?usp=sharing)
+For more detailed information about the scope and current status of the project's development, refer to the [DESIGN DOCUMENT](https://docs.google.com/document/d/1PotuLRZd_NACGDrCuLhelIapcthBduG3xjNqrJ7mCSo/edit?usp=sharing)
 
 ## Hosting
 The app is not currently hosted.
