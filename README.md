@@ -24,7 +24,9 @@ The app is not currently hosted.
 * HTML
 * CSS3/SASS/SCSS
 * JS
+* Vue JS
 * PHP
+* SQL
 
 ## Completion Status
 ### Design
@@ -37,7 +39,7 @@ Still in the prototyping phase for now. The main design guidelines are solid and
 Placeholders pretty much everywhere for now. Lot's of empty boxes as well. That should change as we pick up the pace and start implementing our goals and hitting those milestones described in the main doc.
 
 ### Development
-TBA
+PHP connection is in process, the database is already created in PMA, the PHP connection has to have several functions in order to fetch all the neccessary data in a good manner. Vue Js components will come after this and then when the html and CSS is created the fucntions in PHP and JS will be creating, meanwhile the researching of information and different tools Vue offers is a need. Each week there will be a commit with some updates.
 
 ## License
 ### MIT License
