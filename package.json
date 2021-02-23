@@ -1,0 +1,17 @@
+{
+  "name": "roku_client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "start-dev": "nodemon app"
+  },
+  "author": "Andres",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "http-proxy-middleware": "^1.0.6"
+  }
+}
