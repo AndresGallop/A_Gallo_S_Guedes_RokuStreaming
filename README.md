@@ -12,11 +12,12 @@ The app is not currently hosted.
 #### Design
 * Prototype
 * Assets
+* Front-End Styling & Testing
 
 ### Andres Gallo
 #### Development
-* Front-end
-* Back-end
+* Front-End Structure & Components
+* Back-End API & CMS
 
 ## Developed With
 
