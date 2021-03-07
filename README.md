@@ -16,8 +16,8 @@ The app is not currently hosted.
 
 ### Andres Gallo
 #### Development
-* Front-End Structure & Components
 * Back-End API & CMS
+* Front-End Structure & Components
 
 ## Developed With
 
