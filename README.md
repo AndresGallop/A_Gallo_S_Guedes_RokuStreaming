@@ -31,10 +31,12 @@ The app is not currently hosted.
 ## Completion Status
 ### Design
 Still in the prototyping phase for now. The main design guidelines are solid and mostly done, tho there's still room for refinement. WEB Prototype is working as intended and MOBILE version should come soon after. All of the relevant design files can be found inside the "includes" folder of this repo. It will be constantly updated up till the project's completion.
-#### Prototypes
-[WEB](https://xd.adobe.com/view/498bd617-a680-480e-8be4-0fdd244b5a96-1cd8/?fullscreen&hints=off)
 
-[MOBILE](https://xd.adobe.com/view/821b5388-0c48-4ac3-a1b5-a24ced6cac43-d748/?fullscreen&hints=off)
+#### Prototypes
+##### Updated March 7 2021
+[WEB](https://xd.adobe.com/view/498bd617-a680-480e-8be4-0fdd244b5a96-1cd8/)
+[MOBILE](https://xd.adobe.com/view/58f74cfc-acc6-48e3-b8b6-1fc752cc2500-0da4/?fullscreen)
+
 #### Assets
 Placeholders pretty much everywhere for now. Lot's of empty boxes as well. That should change as we pick up the pace and start implementing our goals and hitting those milestones described in the main doc.
 
