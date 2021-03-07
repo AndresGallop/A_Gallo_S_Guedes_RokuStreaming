@@ -34,7 +34,9 @@ Still in the prototyping phase for now. The main design guidelines are solid and
 
 #### Prototypes
 ##### Updated March 7 2021
+
 [WEB](https://xd.adobe.com/view/498bd617-a680-480e-8be4-0fdd244b5a96-1cd8/)
+
 [MOBILE](https://xd.adobe.com/view/58f74cfc-acc6-48e3-b8b6-1fc752cc2500-0da4/?fullscreen)
 
 #### Assets
