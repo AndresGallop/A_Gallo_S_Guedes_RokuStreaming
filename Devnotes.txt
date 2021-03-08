@@ -33,3 +33,7 @@ Dev notes:
 5.Footer:
 
     Roku pages and legal things.
+
+Challenges found:
+
+Connecting the php login system to the AJAX fetching of the database will be a challenge, I already tried to make it but it did not worked, I will try another way tomorrow.
