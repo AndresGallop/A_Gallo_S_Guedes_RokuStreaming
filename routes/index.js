@@ -41,4 +41,15 @@ router.get('/myadminaccount', (req, res) => {
     });
 })
 
+router.use((req, res) => {
+    res.status(404);
+    // res.send("Page doesn't exist");
+
+    res.render('error', {
+
+        layout: "errorLayout.hbs", 
+        errormessage: `you've lost your way a wee bit! "${req.url}" doesn't exist`
+    })
+})
+
 module.exports = router;
