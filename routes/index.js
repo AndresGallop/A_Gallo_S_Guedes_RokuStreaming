@@ -13,7 +13,32 @@ router.use('/api', createProxyMiddleware({
 }))
 
 router.get('/', (req, res) => {
-    res.send('hit the main route');
+    //res.send('hit the main route');
+    res.render('index', { message: "Hello from handlebars!" });
+})
+
+router.get('/portfolio', (req, res) => {
+    //res.send('hit the main route');
+    res.render('artwork', { portmessage: "You are on the portfolio page"});
+})
+
+router.get('/users', (req, res) => {
+    //res.send('hit the main route');
+    res.render('users', { 
+
+        chooseUserMessage: "Select your profile"
+
+    });
+})
+
+router.get('/myadminaccount', (req, res) => {
+    //res.send('hit the main route');
+    res.render('Adminadult', { 
+
+        welcomemessage: "Welcome back User Trevor",
+        Admintitle: "These are the movie selection for your Admin account"
+
+    });
 })
 
 module.exports = router;
