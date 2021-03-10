@@ -1,4 +1,4 @@
-# Roku Flashback
+![alt text](http://sgs-design.com/temp/imgs/Roku_Logo.png)
 
 ## Intro
 This is a project that aims to create a new app under the Roku umbrella, called Roku Flashback. It's a streaming app focused on retro content produced up till the late 90s. All the relevant content is to be pulled from a database with PHP and Vue.JS, in accordance with the project requirements, and appropriately styled with SCSS/SASS.
