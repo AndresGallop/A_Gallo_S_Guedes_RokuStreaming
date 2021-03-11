@@ -32,9 +32,9 @@ import FivetiesMovies from './components/adminpage/50sComponent.js';
                 // show me the data in table form
             })
             .catch(err => console.error(err));
-        },
+        // },
 
-        mounted: function() {
+        // mounted: function() {
             fetch('/api/users')
             .then(res => res.json())
             .then(data => {
