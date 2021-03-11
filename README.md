@@ -31,7 +31,9 @@ The app is not currently hosted.
 
 ## Completion Status
 ### Design
-Still in the prototyping phase for now. The main design guidelines are solid and mostly done, tho there's still room for refinement. WEB Prototype is working as intended and MOBILE version should come soon after. All of the relevant design files can be found inside the "includes" folder of this repo. It will be constantly updated up till the project's completion.
+The main design guidelines are solid and mostly done, tho there's still room for refinement. All of the relevant design files can be found inside the "includes" folder of this repo. It will be constantly updated up till the project's completion.
+
+March 11 2021: Started implementing styles to the main build. Best case scenario, a steady stream of updates should happen in the next few days.
 
 #### Prototypes (Updated March 9 2021)
 
