@@ -1,7 +1,13 @@
 <section class="home-hero">
     <!-- render the dynamic data here -->
-    <h1>{{ chooseUserMessage }}</h1>
+    <section class="Menubar">
+        <img src="RokuLogo" alt="RokuLogo">
+        <div class="HamburguerMenu"></div>
+    </section>
 
-    <profilethumb v-for="item in allProfiles" :profile="item" :key="item.user_id"></profilethumb>  
-    {{!-- <moviethumb v-for="item in allMovies" :movie="item" :key="item.movies_id"></moviethumb> --}}
-</section>
+    <h1 class="">{{ chooseUserMessage }}</h1>
+
+    <profilethumb v-for="item in allProfiles" :profile="item" :key="item.user_id"></profilethumb> 
+
+    
+</section>  

@@ -1,5 +1,37 @@
 <section class="home-hero">
     <!-- render the dynamic data here -->
-    <h1>{{ welcomemessage }}</h1>
-    <h2> {{ Admintitle }} </h2>
+    <section class="Menubar">
+        <img src="RokuLogo" alt="RokuLogo">
+        <input class="" type="text" placeholder="search">
+        <div class="HamburguerMenu"></div>
+    </section>
+
+    <heroimage v-for="item in allHeroImgs" :heroimage="item" :key="item.movies_id"></heroimage>
+
+    <h1>PROF TREVOR!! For this checkpoint we are still using your database so in each decade movies is an explanation.</h1>
+
+    <section class="home-hero">
+        <h2>90's Movies = 2017</h2>
+        <ninetiesmovies v-for="item in Nineties" :Nineties="item" :key="item.movies_id"></ninetiesmovies>
+    </section>
+
+    <section class="home-hero">
+        <h2>80's Movies = 2016</h2>
+        <eightiesmovies v-for="item in Eighties" :Eighties="item" :key="item.movies_id"></eightiesmovies>
+    </section>
+
+    <section class="home-hero">
+        <h2>70's Movies = 2015</h2>
+        <seventiesmovies v-for="item in Seventies" :Seventies="item" :key="item.movies_id"></seventiesmovies>
+    </section>
+
+    <section class="home-hero">
+        <h2>60's Movies = 2014</h2>
+        <sixtiesmovies v-for="item in Sixties" :Sixties="item" :key="item.movies_id"></sixtiesmovies>
+    </section>
+
+    <section class="home-hero">
+        <h2>50's Movies = 2013 OR LESS</h2>
+        <fivetiesmovies v-for="item in Fiveties" :Fiveties="item" :key="item.movies_id"></fivetiesmovies>
+    </section>
 </section>

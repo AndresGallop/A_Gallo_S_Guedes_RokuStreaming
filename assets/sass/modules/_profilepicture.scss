@@ -5,7 +5,8 @@
     display: inline-block;
     padding: 4px;
 
-    img { max-height: 150px }
+    img { max-height: 150px;
+        border-radius: 5px; }
 }
 
 .profile-thumb:hover{

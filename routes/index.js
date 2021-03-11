@@ -22,24 +22,36 @@ router.get('/portfolio', (req, res) => {
     res.render('artwork', { portmessage: "You are on the portfolio page"});
 })
 
+router.get('/login', (req, res) => {
+    //res.send('hit the main route');
+    res.render('Login', { 
+
+        notmemberyet: "Not a member yet? Sign up to check our sweet retro catalogue",
+        forgotpass: "Forgot your password?"
+
+    }); 
+})
+
 router.get('/users', (req, res) => {
     //res.send('hit the main route');
     res.render('users', { 
 
         chooseUserMessage: "Select your profile"
 
-    });
+    }); 
 })
 
-router.get('/myadminaccount', (req, res) => {
+router.get('/adminpage', (req, res) => {
     //res.send('hit the main route');
     res.render('Adminadult', { 
 
-        welcomemessage: "Welcome back User Trevor",
+        welcomemessage: "Welcome back User",
         Admintitle: "These are the movie selection for your Admin account"
 
-    });
+    }); 
 })
+
+
 
 router.use((req, res) => {
     res.status(404);
