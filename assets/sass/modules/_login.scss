@@ -1,0 +1,30 @@
+.login_body{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:100vh;
+    margin: 0 20px 0 20px;
+}
+
+.login_logo_wrapper{
+    margin: 0 auto;
+    border: 1px solid green;
+    margin-bottom: 50px;
+        .login_logo{
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            .logo_web{
+                display:flex;
+                @media only screen and (max-width: 600px){
+                    display:none;
+                }
+            }
+            .logo_mob{
+                display:none;
+                @media only screen and (max-width: 600px){
+                    display:flex;
+                }
+            }
+        }
+}

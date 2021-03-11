@@ -1,0 +1,17 @@
+<section class="login_body">
+    <div class="login_logo_wrapper">
+        <div class="login_logo">
+            <img class="logo_web" src="../public/images/beauty.jpg">
+            <img class="logo_mob" src="../public/images/0_LOGO_MOB.svg">
+        </div>
+    </div>
+    <!-- render the dynamic data here -->
+    <input type="text" placeholder="username" v-model="username">
+    <input type="password" placeholder="password" v-model="password">
+
+        <input @click="storeCreds" type="submit" value="Sign In">
+
+    <h4>{{ notmemberyet }}</h4>
+    <h5> {{forgotpass}} </h5>
+
+</section>

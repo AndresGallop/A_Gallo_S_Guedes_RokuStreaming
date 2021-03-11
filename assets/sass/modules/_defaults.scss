@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    background:#1e2434;
+    color:#fff;
+    font-family:sans-serif;
+    font-size:16px;
+    background: linear-gradient(333deg, rgba(70,19,131,1) 0%, rgba(122,43,134,1) 100%);
+    background-size: 300% 2500%;
+    animation: gradient 6s ease infinite;
+}
+
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}

@@ -1,0 +1,95 @@
+.login_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 20px 0 20px;
+}
+
+.login_logo_wrapper {
+  margin: 0 auto;
+  border: 1px solid green;
+  margin-bottom: 50px;
+}
+.login_logo_wrapper .login_logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.login_logo_wrapper .login_logo .logo_web {
+  display: flex;
+}
+@media only screen and (max-width: 600px) {
+  .login_logo_wrapper .login_logo .logo_web {
+    display: none;
+  }
+}
+.login_logo_wrapper .login_logo .logo_mob {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .login_logo_wrapper .login_logo .logo_mob {
+    display: flex;
+  }
+}
+
+.movie-thumb {
+  width: 150px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 4px;
+}
+.movie-thumb img {
+  max-height: 220px;
+}
+
+.profile-thumb {
+  margin: 20px;
+  width: 150px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 4px;
+}
+.profile-thumb img {
+  max-height: 150px;
+  border-radius: 5px;
+}
+
+.profile-thumb:hover {
+  transform: scale(1.1);
+}
+
+.moviehero-thumb {
+  width: 200px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 4px;
+}
+.moviehero-thumb img {
+  max-height: 220px;
+}
+
+body {
+  margin: 0;
+  background: #1e2434;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 16px;
+  background: linear-gradient(333deg, #461383 0%, #7a2b86 100%);
+  background-size: 300% 2500%;
+  animation: gradient 6s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
