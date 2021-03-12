@@ -13,15 +13,8 @@ export default {
         <!-- render the dynamic data here -->
         <input class="login_input" type="text" placeholder="username" v-model="username">
         <input class="login_input" type="password" placeholder="password" v-model="password">
-    
         <input class="login_button" @click="storeCreds" type="submit" value="Sign In">
-    
-        <div class="login_text">
-            <h4>{{ notmemberyet }}</h4>
-            <h5> {{forgotpass}} </h5>
-        </div>
-    
-    </section>
+        </section>
     `,
 
     data: function() {
