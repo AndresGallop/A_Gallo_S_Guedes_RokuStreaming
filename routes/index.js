@@ -5,7 +5,7 @@ const router = express.Router();
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
 router.use('/api', createProxyMiddleware({
-    target: 'http://localhost:5000',
+    target: 'http://localhost:5000', 
     headers: {
         accept: 'application/json, application/x-www-form-urlencoded'
     },
@@ -22,7 +22,7 @@ router.get('/portfolio', (req, res) => {
     res.render('artwork', { portmessage: "You are on the portfolio page"});
 })
 
-router.get('/login', (req, res) => {
+router.get('/l', (req, res) => {
     //res.send('hit the main route');
     res.render('Login', { 
 
