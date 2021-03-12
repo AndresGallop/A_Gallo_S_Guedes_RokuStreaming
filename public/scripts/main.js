@@ -1,6 +1,8 @@
-import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.esm.browser.js';
+// import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.esm.browser.js';
+// import VueRouter from "https://unpkg.com/vue-router@3.5.1/dist/vue-router.js";
 import TheMovieThumb from './components/TheMovieThumbnailComponent.js';
 import ProfileImage from './components/ImageProfileComponent.js';
+import TheLoginComponent from './components/TheLoginComponent.js';
 
 //IMPORTING COMPONENTS FOR THE ADMIN (NO RESTRICTED) PAGE
 import HeroImage from './components/adminpage/HeroImageAdultsComponent.js';
@@ -11,6 +13,37 @@ import SixtiesMovies from './components/adminpage/60sComponent.js';
 import FivetiesMovies from './components/adminpage/50sComponent.js';
 
 (() => {
+
+    console.log('fired!');
+
+    // add our VueRouter here
+    const router = new VueRouter({
+        routes: [
+           // { path: "/", component: HomePage}, ****
+           { path: "/", component: TheLoginComponent,
+        
+        },
+
+            // only access route or section if you're logged in / authenticate
+
+            {
+                 path: "/adminpage", 
+                 component: HeroImage,
+
+                 beforeEnter: (to, from, next) => {
+                     // if you're NOT authenticated, then go to the login page
+                     if(!vm.authenticated) {
+                         next("/login");
+                     } else {
+                         // you're logged in, you can go to the protected section
+                         next();
+                     }
+                 }
+            
+            }
+        ]
+    })
+
     const vm = new Vue({
         data: {
             allMovies: [],
@@ -20,10 +53,18 @@ import FivetiesMovies from './components/adminpage/50sComponent.js';
             Eighties: [],
             Seventies: [],
             Sixties: [],
-            Fiveties: []
+            Fiveties: [],
+            authenticated: false,
+            user: ""
         },
 
         created: function() {
+
+            if (window.localStorage.getItem("creds")) {
+                this.authenticated = true;
+                this.user = JSON.parse(window.localStorage.getItem("creds")).name;
+            }
+
             fetch('/api/movies')
             .then(res => res.json())
             .then(data => {
@@ -32,9 +73,9 @@ import FivetiesMovies from './components/adminpage/50sComponent.js';
                 // show me the data in table form
             })
             .catch(err => console.error(err));
-        },
+        // },
 
-        mounted: function() {
+        // mounted: function() {
             fetch('/api/users')
             .then(res => res.json())
             .then(data => {
@@ -111,7 +152,10 @@ import FivetiesMovies from './components/adminpage/50sComponent.js';
             eightiesmovies: EightiesMovies,
             seventiesmovies: SeventiesMovies,
             sixtiesmovies: SixtiesMovies,
-            fivetiesmovies: FivetiesMovies
-        }
+            fivetiesmovies: FivetiesMovies,
+            logincomp: TheLoginComponent
+        },
+
+        router
     }).$mount("#app");
 })();
