@@ -8,23 +8,67 @@
 
 .login_logo_wrapper{
     margin: 0 auto;
-    border: 1px solid green;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
         .login_logo{
             display:flex;
             flex-direction:row;
             justify-content:center;
+            margin-bottom: 100px;
             .logo_web{
                 display:flex;
-                @media only screen and (max-width: 600px){
+                width:800px;
+                transition:0.2s;
+                @media only screen and (max-width: 850px){
+                    width:600px;
+                }
+                @media only screen and (max-width: 650px){
                     display:none;
                 }
             }
             .logo_mob{
                 display:none;
-                @media only screen and (max-width: 600px){
+                width:320px;
+                @media only screen and (max-width: 650px){
                     display:flex;
                 }
             }
         }
+}
+
+.login_input{
+    width: 350px;
+    height: 30px;
+    margin: 0 auto 20px auto;
+    border: none;
+    border-radius:12px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.login_button{
+    width: 220px;
+    height: 55px;
+    margin: 20px auto 0 auto;
+    border: 1px solid white;
+    border-radius:15px;
+    cursor:pointer;
+    font-size: 1.2em;
+    background-color:$roku_purple_dark;
+    color:white;
+    &:hover{
+        border: 1px solid $roku_purple_dark;
+        color:$roku_purple;
+        background-color:white;
+    }
+}
+
+.login_text{
+    margin: 0 auto 120px auto;
+    max-width:500px;
+    h4{
+        font-size:0.9em;
+    }
+    h5{
+        font-size:0.7em;
+    }
 }
