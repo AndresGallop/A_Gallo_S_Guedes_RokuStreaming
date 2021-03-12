@@ -83,6 +83,10 @@
   font-size: 0.7em;
 }
 
+.topnav_logo {
+  width: 300px;
+}
+
 .movie-thumb {
   width: 150px;
   cursor: pointer;
