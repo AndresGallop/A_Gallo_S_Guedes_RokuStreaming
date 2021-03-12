@@ -13,7 +13,55 @@ router.use('/api', createProxyMiddleware({
 }))
 
 router.get('/', (req, res) => {
-    res.send('hit the main route');
+    //res.send('hit the main route');
+    res.render('index', { message: "Hello from handlebars!" });
+})
+
+router.get('/portfolio', (req, res) => {
+    //res.send('hit the main route');
+    res.render('artwork', { portmessage: "You are on the portfolio page"});
+})
+
+router.get('/login', (req, res) => {
+    //res.send('hit the main route');
+    res.render('Login', { 
+
+        notmemberyet: "Not a member yet? Sign up to check our sweet retro catalogue",
+        forgotpass: "Forgot your password?"
+
+    }); 
+})
+
+router.get('/users', (req, res) => {
+    //res.send('hit the main route');
+    res.render('users', { 
+
+        chooseUserMessage: "Select your profile"
+
+    }); 
+})
+
+router.get('/adminpage', (req, res) => {
+    //res.send('hit the main route');
+    res.render('Adminadult', { 
+
+        welcomemessage: "Welcome back User",
+        Admintitle: "These are the movie selection for your Admin account"
+
+    }); 
+})
+
+
+
+router.use((req, res) => {
+    res.status(404);
+    // res.send("Page doesn't exist");
+
+    res.render('error', {
+
+        layout: "errorLayout.hbs", 
+        errormessage: `you've lost your way a wee bit! "${req.url}" doesn't exist`
+    })
 })
 
 module.exports = router;
