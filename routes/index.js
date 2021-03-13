@@ -14,13 +14,13 @@ router.use('/api', createProxyMiddleware({
 
 router.get('/', (req, res) => {
     //res.send('hit the main route');
-    res.render('index', { message: "Hello from handlebars!" });
+    res.render('Login', { message: "Hello from handlebars!" });
 })
 
-router.get('/portfolio', (req, res) => {
-    //res.send('hit the main route');
-    res.render('artwork', { portmessage: "You are on the portfolio page"});
-})
+// router.get('/portfolio', (req, res) => {
+//     //res.send('hit the main route');
+//     res.render('artwork', { portmessage: "You are on the fucking crazy portfolio page"});
+// })
 
 router.get('/login', (req, res) => {
     //res.send('hit the main route');
@@ -42,6 +42,8 @@ router.get('/users', (req, res) => {
 })
 
 router.get('/adminpage', (req, res) => {
+    
+    
     //res.send('hit the main route');
     res.render('Adminadult', { 
 

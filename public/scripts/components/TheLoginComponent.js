@@ -9,11 +9,12 @@ export default {
                 <img class="logo_web" src="./images/0_LOGO.svg">
                 <img class="logo_mob" src="./images/0_LOGO_MOB.svg">
             </div>
+            
         </div>
         <!-- render the dynamic data here -->
         <input class="login_input" type="text" placeholder="username" v-model="username">
         <input class="login_input" type="password" placeholder="password" v-model="password">
-        <input class="login_button" @click="storeCreds" type="submit" value="Sign In">
+        <a class="outsidebutton" href="/users"><input class="login_button" @click="storeCreds" type="submit" value="Sign In"></a>
         </section>
     `,
 

@@ -20,9 +20,8 @@ import FivetiesMovies from './components/adminpage/50sComponent.js';
     const router = new VueRouter({
         routes: [
            // { path: "/", component: HomePage}, ****
-           { path: "/", component: TheLoginComponent,
-        
-        },
+           { path: "/", component: TheLoginComponent},
+          // { path: "/users#/users", component: ProfileImage},
 
             // only access route or section if you're logged in / authenticate
 
@@ -30,7 +29,7 @@ import FivetiesMovies from './components/adminpage/50sComponent.js';
                  path: "/adminpage", 
                  component: HeroImage,
 
-                 beforeEnter: (to, from, next) => {
+                 beforeEnter(){ (to, from, next) => {
                      // if you're NOT authenticated, then go to the login page
                      if(!vm.authenticated) {
                          next("/login");
@@ -38,11 +37,13 @@ import FivetiesMovies from './components/adminpage/50sComponent.js';
                          // you're logged in, you can go to the protected section
                          next();
                      }
-                 }
+                 }}
             
             }
         ]
     })
+
+
 
     const vm = new Vue({
         data: {
