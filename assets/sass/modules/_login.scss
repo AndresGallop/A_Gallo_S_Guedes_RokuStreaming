@@ -4,6 +4,10 @@
     justify-content:center;
     height:100vh;
     margin: 0 20px 0 20px;
+    a {
+        margin: 0 auto;
+        // THIS SHOULD BE REMOVED ALONG WITH THE TEMP LINK ON THE LOGIN COMPONENT
+    }
 }
 
 .login_logo_wrapper{
@@ -13,23 +17,23 @@
             display:flex;
             flex-direction:row;
             justify-content:center;
-            margin-bottom: 100px;
+            margin-bottom: 40px;
             .logo_web{
-                display:flex;
-                width:800px;
+                display:none;
+                width:600px;
                 transition:0.2s;
-                @media only screen and (max-width: 850px){
-                    width:600px;
+                @media only screen and (min-width: 850px){
+                    width:800px;
                 }
-                @media only screen and (max-width: 650px){
-                    display:none;
+                @media only screen and (min-width: 650px){
+                    display:flex;
                 }
             }
             .logo_mob{
-                display:none;
+                display:flex;
                 width:320px;
-                @media only screen and (max-width: 650px){
-                    display:flex;
+                @media only screen and (min-width: 650px){
+                    display:none;
                 }
             }
         }
@@ -42,7 +46,7 @@
     border: none;
     border-radius:12px;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .login_button{
@@ -53,6 +57,7 @@
     border-radius:15px;
     cursor:pointer;
     font-size: 1.2em;
+    font-weight:900;
     background-color:$roku_purple_dark;
     color:white;
     &:hover{
