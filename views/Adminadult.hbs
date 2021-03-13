@@ -1,0 +1,58 @@
+<section class="main_body">
+    <!-- render the dynamic data here -->
+    <section class="topnav_body">
+        <a href="users">
+            <img class="topnav_logo" src="./images/0_LOGO.svg" alt="RokuLogo">
+        </a>
+
+        <!-- the LINK ABOVE is temporary, just for the purpuses of having some navigation going on for the CHECKPOINT -->
+
+        <div class="topnav_right">
+            <input class="" type="text" placeholder="search">
+            <a href="#"><img class="topnav_settings_icon" src="./images/0_Settings.svg" alt="settings icon"></a>
+        </div>
+    </section>
+
+    <div class="hero_wrapper">
+        {{!-- <heroimage class="hero_content_unit" v-for="item in allHeroImgs" :heroimage="item" :key="item.movies_id"></heroimage> --}}
+        <!-- ABOVE IS THE ACTUAL TAG THATS GONNA PULL STUFF FROM THE DATABASE TO BE ON THE PREVIEW SCREEN -->
+
+        <video width="100vw" height="100vh" autoplay muted loop>
+            <source src="./videos/PRVW_Friends.mp4" type="video/mp4">
+        </video>
+        <!-- THIS IS TEMPORARY, JUST FOR DEMONSTRATION PURPUSES -->
+    </div>
+
+    <div class="gradient_wrapper"></div>
+    <div class="gradient_reverse_wrapper"></div>
+
+    <div class="warning_box">
+        <h1>WARNING</h1>
+        <p>For this <span>checkpoint</span> we are still using the classbuild database, that's why the movies don't yet match the assigned categories</p>
+    </div>
+
+    <section class="category_gallery_wrapper">
+        <h2>90's</h2>
+        <ninetiesmovies v-for="item in Nineties" :Nineties="item" :key="item.movies_id"></ninetiesmovies>
+    </section>
+
+    <section class="category_gallery_wrapper">
+        <h2>80's</h2>
+        <eightiesmovies v-for="item in Eighties" :Eighties="item" :key="item.movies_id"></eightiesmovies>
+    </section>
+
+    <section class="category_gallery_wrapper">
+        <h2>70's</h2>
+        <seventiesmovies v-for="item in Seventies" :Seventies="item" :key="item.movies_id"></seventiesmovies>
+    </section>
+
+    <section class="category_gallery_wrapper">
+        <h2>60's</h2>
+        <sixtiesmovies v-for="item in Sixties" :Sixties="item" :key="item.movies_id"></sixtiesmovies>
+    </section>
+
+    <section class="category_gallery_wrapper">
+        <h2>50's</h2>
+        <fivetiesmovies v-for="item in Fiveties" :Fiveties="item" :key="item.movies_id"></fivetiesmovies>
+    </section>
+</section>
