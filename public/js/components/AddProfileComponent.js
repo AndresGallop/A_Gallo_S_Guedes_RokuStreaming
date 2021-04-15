@@ -16,5 +16,4 @@ export default {
         <img src="" alt="Kids status">
     <section>
         `
-	
 }

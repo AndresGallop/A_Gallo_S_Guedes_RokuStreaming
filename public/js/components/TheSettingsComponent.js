@@ -48,5 +48,4 @@ export default {
             this.$router.push({ name: "addprofile"});
         }
     }
-	
 }
