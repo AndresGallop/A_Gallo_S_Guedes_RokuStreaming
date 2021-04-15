@@ -18,9 +18,6 @@
 .login_body a {
   margin: 0 auto;
 }
-.login_body p {
-  margin: 10px auto;
-}
 
 .login_logo_wrapper {
   margin: 0 auto;
@@ -70,7 +67,7 @@
 .login_button {
   width: 220px;
   height: 55px;
-  margin: 20px auto 50px auto;
+  margin: 20px auto 0 auto;
   border: 1px solid white;
   border-radius: 15px;
   cursor: pointer;
@@ -155,44 +152,31 @@
 }
 
 .hero_wrapper {
-  height: 50vh;
+  height: 100vh;
   overflow: hidden;
-  transition: 0.5s;
 }
 .hero_wrapper .hero_content_unit {
   overflow: hidden;
 }
-.hero_wrapper video {
+
+video {
   object-fit: cover;
   width: 100vw;
-  height: 50vh;
+  height: 100vh;
   top: 0;
   left: 0;
 }
 
-@media only screen and (min-width: 1000px) {
-  .hero_wrapper {
-    height: 100vh;
-    overflow: hidden;
-  }
-  .hero_wrapper .hero_content_unit {
-    overflow: hidden;
-  }
-  .hero_wrapper video {
-    height: 100vh;
-  }
-}
 .gradient_wrapper {
   position: relative;
   background: linear-gradient(180deg, rgba(100, 45, 145, 0) 0%, #642d91 100%);
-  height: 150px;
-  margin-top: -150px;
+  height: 100px;
+  margin-top: -100px;
 }
 
 .gradient_reverse_wrapper {
   background: linear-gradient(0deg, rgba(100, 45, 145, 0) 0%, #642d91 100%);
-  height: 150px;
-  margin-bottom: -50px;
+  height: 100px;
 }
 
 .moviehero-thumb {
@@ -208,38 +192,22 @@
 .category_gallery_wrapper {
   overflow: hidden;
   margin-left: 20px;
-  margin: -30px 20px 70px 20px;
+  margin: 0 0 60px 20px;
 }
 .category_gallery_wrapper h2 {
   font-size: 3em;
   font-weight: 100;
   margin-bottom: 10px;
 }
-.category_gallery_wrapper .category_gallery_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: nowrap !important;
-  overflow: hidden;
-  border: 1px solid red;
-}
-.category_gallery_wrapper .category_gallery_container .btn_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.category_gallery_wrapper .category_gallery_container .movie_thumb {
-  display: inline-block;
+
+.movie_thumb {
+  width: 150px;
   cursor: pointer;
   display: inline-block;
   padding: 4px;
-  border: 1px solid red;
 }
-.category_gallery_wrapper .category_gallery_container .movie_thumb img {
-  margin: 10px;
+.movie_thumb img {
   max-height: 220px;
-  max-width: 100px;
-  border: 1px solid red;
 }
 
 .users_content_wrapper {
@@ -298,76 +266,6 @@
 .users_content_wrapper .users_content_align .user_plus_sign_wrapper .users_plus_sign:hover {
   transform: scale(1.05);
   opacity: 80%;
-}
-
-.media_selector_wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-}
-.media_selector_wrapper .media_selector_item {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-}
-.media_selector_wrapper .media_selector_item h1 {
-  font-size: 4em;
-  text-align: center;
-  writing-mode: vertical-lr;
-  margin: 0;
-}
-
-@media only screen and (min-width: 1000px) {
-  .media_selector_wrapper {
-    flex-direction: row;
-  }
-  .media_selector_wrapper .media_selector_item {
-    height: 100vh;
-  }
-  .media_selector_wrapper .media_selector_item h1 {
-    margin-top: 88vh;
-    font-size: 5.5em;
-    writing-mode: horizontal-tb;
-    color: black;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-  }
-  .media_selector_wrapper .media_selector_item:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-  }
-  .media_selector_wrapper .media_selector_item:hover h1 {
-    -webkit-text-fill-color: rgba(255, 255, 255, 0.9);
-  }
-}
-.adl_tv {
-  background-color: rgba(135, 50, 140, 0.3);
-  background-image: url(../../../public/images/0_MediaSelector_Mob_Adlt_TV.png);
-}
-
-.adl_movies {
-  background-color: rgba(155, 70, 160, 0.3);
-  background-image: url();
-}
-
-.adl_music {
-  background-color: rgba(135, 50, 140, 0.3);
-  background-image: url();
-}
-
-.kids_tv {
-  background-image: url();
-}
-
-.kids_movies {
-  background-image: url();
-}
-
-.kids_music {
-  background-image: url();
 }
 
 body {
