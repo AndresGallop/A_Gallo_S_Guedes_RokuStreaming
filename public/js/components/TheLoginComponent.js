@@ -13,21 +13,12 @@ export default {
             <input class="login_input" type="text" placeholder="username" v-model="input.username">
             <input class="login_input" type="password" placeholder="password" v-model="input.password">
 
-
             <a>
                 <input v-on:click.prevent="login()" type="submit" class="login_button"  value="Sign In">
             </a>
 
-
             <p>Not a member yet? <span @click="toSignUp" class="decored">Sign up</span> to check our sweet catalogue</p>      
             <p>Forgot your password?</p>         
-            
-
-            <!-- ----------------------------------------------------- -->
-            <!-- THE LINK ABOVE IS TEMPORARY AND NEEDS TO BE REMOVED AFTER THE CHECKPOINT -->
-            <!-- BUT JUST THE LINK, THE INPUT INSIDE IS GOOD AND SHOULD BE USABLE GOING FORWARD -->
-            <!-- ----------------------------------------------------- -->
-
         </section>
     `,
 

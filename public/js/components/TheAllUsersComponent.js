@@ -8,9 +8,12 @@ export default {
     <div class="users_content_wrapper">
         <div class="users_content_align">
 
-                <user v-for="(user, index) in userList" :liveuser="user" :key="index" class="profile-thumb"></user>
+               
+                <user v-for="(user, index) in userList" :liveuser="user" :key="index"></user>
 
                 <div class="user_plus_sign_wrapper"><img class="users_plus_sign" src="./images/0_Plus.svg"></div>
+
+                
         </div>
     </div>
 	`,

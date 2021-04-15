@@ -39,7 +39,7 @@ export default {
             <h1>Kids 2</h1>
         </div>
     </div>
-    <section>
+    </section>
         `,
 
     methods: {
@@ -48,5 +48,4 @@ export default {
             this.$router.push({ name: "addprofile"});
         }
     }
-	
 }

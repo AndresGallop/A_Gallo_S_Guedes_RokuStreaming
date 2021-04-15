@@ -8,6 +8,7 @@ import SettingsComponent from './components/TheSettingsComponent.js';
 import MediaChoose from './components/TheMediaChoose.js';
 import SignUpComponent from './components/TheSignUpComponent.js';
 import AddProfileComponent from './components/AddProfileComponent.js';
+import TheFullMovie from './components/FullMovieComponent.js';
 
 
 
@@ -22,9 +23,10 @@ import AddProfileComponent from './components/AddProfileComponent.js';
            { path: "/users", name: 'users', component: AllUsers},
            { path: '/home', name: 'home', component: HomeComponent, props: true },
            { path: '/settings', name: 'settings', component: SettingsComponent },
-           { path: '/mediaoptions', name: 'mediaoptions', component: MediaChoose },
+           { path: '/mediaoptions', name: 'mediaoptions', component: MediaChoose, props: true },
            { path: '/signup', name: 'signup', component: SignUpComponent },
-           { path: '/addprofile', name: 'addprofile', component: AddProfileComponent }
+           { path: '/addprofile', name: 'addprofile', component: AddProfileComponent },
+           { path: '/fullmovie', name: 'fullmovie', component: TheFullMovie, props: true }
 
         ]
     });
