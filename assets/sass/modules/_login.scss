@@ -8,6 +8,9 @@
         margin: 0 auto;
         // THIS SHOULD BE REMOVED ALONG WITH THE TEMP LINK ON THE LOGIN COMPONENT
     }
+    p {
+        margin: 10px auto;
+    }
 }
 
 .login_logo_wrapper{
@@ -52,7 +55,7 @@
 .login_button{
     width: 220px;
     height: 55px;
-    margin: 20px auto 0 auto;
+    margin: 20px auto 50px auto;
     border: 1px solid white;
     border-radius:15px;
     cursor:pointer;

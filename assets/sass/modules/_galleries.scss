@@ -2,6 +2,26 @@
     overflow:hidden;
     margin-left:20px;
     margin: -30px 20px 70px 20px;
+    .category_filter_select{
+        margin-top:-30px;
+        display:flex;
+        flex-direction:row;
+        z-index:1 !important;
+        h2 {
+            cursor:pointer;
+            font-size:2em;
+            margin-right:20px;
+            transition:0.2s;
+        }
+    }
+    @media only screen and (min-width: 1000px){
+        .category_filter_select{
+            h2 {
+                font-size:2.8em;
+                margin-right:20px;
+            }
+        }
+    }
     h2{
         font-size:3em;
         font-weight:100;

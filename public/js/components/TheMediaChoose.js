@@ -6,17 +6,15 @@ export default {
 
 	template: `
         <section class="media_selector_wrapper">
-                <div class="media_selector_item adl_tv" @click="gohome">
-                    <h1>TV</h1>
-                </div>
-
-                <div class="media_selector_item adl_movies" @click="gohome">
-                    <h1>MOVIES</h1>
-                </div>
-
-                <div class="media_selector_item adl_music" @click="gohome">
-                    <h1>MUSIC</h1>
-                </div>
+            <div class="media_selector_item adl_tv" @click="gohome">
+                <h1>TV</h1>
+            </div>
+            <div class="media_selector_item adl_movies" @click="gohome">
+                <h1>MOVIES</h1>
+            </div>
+            <div class="media_selector_item adl_music" @click="gohome">
+                <h1>MUSIC</h1>
+            </div>
         </section>
 	`,
 

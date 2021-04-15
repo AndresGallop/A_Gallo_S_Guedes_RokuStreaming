@@ -9,6 +9,7 @@ export default {
                     <img class="logo_mob" src="./images/0_LOGO_MOB.svg">
                 </div>
             </div>
+
             <!-- render the dynamic data here -->
             <input class="login_input" type="text" placeholder="username" v-model="input.username">
             <input class="login_input" type="password" placeholder="password" v-model="input.password">
@@ -45,8 +46,7 @@ data() {
                     method: 'POST',
                     body: loginData,
                     headers: {
-                       'Accept': 'application/json, text/plain, */*',
-                       'Content-type': 'application/json'
+                       'Accept': 'application/json, text/plain, */*','Content-type': 'application/json'
                     }   
                 })
                 .then(res => res.json())

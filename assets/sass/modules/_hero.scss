@@ -11,10 +11,12 @@
         height: 50vh;
         top: 0;
         left: 0;
+        z-index:-1 !important;
     }
 }
 
-@media only screen and (min-width: 1000px) {.hero_wrapper{
+@media only screen and (min-width: 1000px) {
+    .hero_wrapper{
     height:100vh;
     overflow:hidden;
     .hero_content_unit {

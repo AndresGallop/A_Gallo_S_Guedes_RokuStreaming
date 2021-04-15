@@ -5,38 +5,40 @@ export default {
 
     template: `
     
-<section class="main_body">
+    <section class="main_body">
 
-    <div class="hero_wrapper">
-        <video width="100vw" height="100vh" autoplay muted loop :src="'./video/' + currentMediaDetails.movies_trailer"></video>
-    </div>
+        <div class="hero_wrapper">
+            <video width="100vw" height="100vh" autoplay muted loop :src="'./video/' + currentMediaDetails.movies_trailer"></video>
+        </div>
 
-    <div class="gradient_wrapper"></div>
-    <div class="gradient_reverse_wrapper"></div>
-
-    <section class="category_gallery_wrapper">
-        <h2 @click.prevent="filtermovies('2016')">2016</h2>
-        <h2 @click.prevent="filtermovies('2015')">2015</h2>
-        <h2 @click.prevent="filtermovies('2014')">2014</h2>
-        <h2 @click.prevent="filtermovies('2013')">2013</h2>
+        <div class="gradient_wrapper"></div>
+        <div class="gradient_reverse_wrapper"></div>
 
         <section class="category_gallery_wrapper">
-            <h2>90's</h2>
-            <div class="category_gallery_container">
-                <div class="btn_container">
-                    <button class="btn_back"> <p> < </p> </button>
-                </div>
-                <div class="movie_thumb">
-                    <img @click="switchCurrentMedia(media)" v-for="media in retrievedMedia" :src="'images/' + media.movies_cover" alt="media thumb">
-                </div>
-                <div class="btn_container">
-                <button class="btn_forward"> <p> > </p> </button>
-                </div>
+            <div class="category_filter_select">
+                <h2 @click.prevent="filtermovies('2016')">2016</h2>
+                <h2 @click.prevent="filtermovies('2015')">2015</h2>
+                <h2 @click.prevent="filtermovies('2014')">2014</h2>
+                <h2 @click.prevent="filtermovies('2013')">2013</h2>
             </div>
+            <hr>
+            <section class="category_gallery_wrapper">
+                <h2>90's</h2>
+                <div class="category_gallery_container">
+                    <div class="btn_container">
+                        <button class="btn_back"> <p> < </p> </button>
+                    </div>
+                    <div class="movie_thumb">
+                        <img @click="switchCurrentMedia(media)" v-for="media in retrievedMedia" :src="'images/' + media.movies_cover" alt="media thumb">
+                    </div>
+                    <div class="btn_container">
+                    <button class="btn_forward"> <p> > </p> </button>
+                    </div>
+                </div>
+            </section>
         </section>
-    </section>
 
-</section>
+    </section>
 `,
 
 data() {
