@@ -9,6 +9,9 @@ The app is not currently hosted.
 
 ## Install
 To test the APP you need to have the server_side code running, preferably on port 5000, then after that run client_side on a separate port, preferably 5050. Index page should be ignored at the moment, instead go to "http://localhost:5050/login/" to see the login page. It doesn't properly logs the user in currently, but we have added some navigation by linking it to the following page, profile selection, and from there you can click on any of the icons and it will take you to the deashboard where all the galleries are gonna be for the user to pick from.
+Use the following credentials to log into the system:
+* Username: user1
+* Password: pas
 
 ## Authors
 ### Sandro Guedes
@@ -31,12 +34,6 @@ To test the APP you need to have the server_side code running, preferably on por
 * Vue JS
 * PHP
 * SQL
-
-## Installation
-
-No installation needed, just run it on a localhost and use the following credentials to log into the system:
-* Username: user1
-* Password: pas
 
 ## Completion Status
 ### Design
