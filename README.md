@@ -7,12 +7,6 @@ For more detailed information about the scope and current status of the project'
 ## Hosting
 The app is not currently hosted.
 
-## Install
-To test the APP you need to have the server_side code running, preferably on port 5000, then after that run client_side on a separate port, preferably 5050. Index page should be ignored at the moment, instead go to "http://localhost:5050/login/" to see the login page. It doesn't properly logs the user in currently, but we have added some navigation by linking it to the following page, profile selection, and from there you can click on any of the icons and it will take you to the deashboard where all the galleries are gonna be for the user to pick from.
-Use the following credentials to log into the system:
-* Username: user1
-* Password: pas
-
 ## Authors
 ### Sandro Guedes
 #### Design
@@ -62,4 +56,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR HERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-

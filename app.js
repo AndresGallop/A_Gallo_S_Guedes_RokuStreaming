@@ -1,10 +1,13 @@
 const express = require('express');
 const path = require('path');
-const hbs = require('hbs'); 
+const hbs = require('hbs');
 
 const app = express();
 
-const port = process.env.PORT || 5050;
+hbs.registerPartials(path.join(__dirname, '/views/templates'));
+hbs.partials = hbs.templates; // this makes Vue part s work in hbs partials
+
+const port = process.env.PORT || 6060;
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');

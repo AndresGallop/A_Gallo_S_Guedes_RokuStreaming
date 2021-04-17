@@ -1,0 +1,13 @@
+<section v-if="currentUser" class="topnav_body">
+        <a>
+            <img @click="gohome" class="topnav_logo" src="./images/0_LOGO.svg" alt="RokuLogo">
+        </a>
+
+        <!-- the LINK ABOVE is temporary, just for the purpuses of having some navigation going on for the CHECKPOINT -->
+
+        <div class="topnav_right">
+            <input class="" type="text" placeholder="search">
+            <li v-if="currentUser.user_picture"><img class="smallavatar" :src='"images/" + currentUser.user_picture'></li>
+            <a @click="goSettings"><img @click="goSettings" class="topnav_settings_icon" src="./images/0_Settings.svg" alt="settings icon"></a>
+        </div>
+    </section>
