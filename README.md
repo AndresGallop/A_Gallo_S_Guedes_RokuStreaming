@@ -32,6 +32,12 @@ To test the APP you need to have the server_side code running, preferably on por
 * PHP
 * SQL
 
+## Installation
+
+No installation needed, just run it on a localhost and use the following credentials to log into the system:
+* Username: user1
+* Password: pas
+
 ## Completion Status
 ### Design
 The main design guidelines are solid and mostly done, tho there's still room for refinement. All of the relevant design files can be found inside the "includes" folder of this repo. It will be constantly updated up till the project's completion.
