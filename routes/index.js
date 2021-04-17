@@ -12,6 +12,14 @@ router.use('/api', createProxyMiddleware({
     changeOrigin: true
 }))
 
+router.use('/ums', createProxyMiddleware({
+    target: 'http://localhost:5000',
+    headers: {
+        accept: 'application/json, application/x-www-form-urlencoded'
+    },
+    changeOrigin: true
+}))
+
 router.get('/', (req, res) => {
     //res.send('hit the main route');
     res.render('index', { message: "Hello from handlebars!" });
@@ -24,31 +32,31 @@ router.get('/portfolio', (req, res) => {
 
 router.get('/login', (req, res) => {
     //res.send('hit the main route');
-    res.render('Login', { 
+    res.render('Login', {
 
         notmemberyet: "Not a member yet? Sign up to check our sweet retro catalogue",
         forgotpass: "Forgot your password?"
 
-    }); 
+    });
 })
 
 router.get('/users', (req, res) => {
     //res.send('hit the main route');
-    res.render('users', { 
+    res.render('users', {
 
         chooseUserMessage: "Select your profile"
 
-    }); 
+    });
 })
 
 router.get('/adminpage', (req, res) => {
     //res.send('hit the main route');
-    res.render('Adminadult', { 
+    res.render('Adminadult', {
 
         welcomemessage: "Welcome back User",
         Admintitle: "These are the movie selection for your Admin account"
 
-    }); 
+    });
 })
 
 
@@ -59,7 +67,7 @@ router.use((req, res) => {
 
     res.render('error', {
 
-        layout: "errorLayout.hbs", 
+        layout: "errorLayout.hbs",
         errormessage: `you've lost your way a wee bit! "${req.url}" doesn't exist`
     })
 })

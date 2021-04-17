@@ -10,23 +10,22 @@
     <title>Roku Streaming Service</title>
 </head>
 <body>
-    <main id="app"> 
-        
+    <main id="app">
+        {{> header}}
+
     {{!-- <h1>Roku Streaming</h1>
     <h3>The app where fantasy comes true!</h3> --}}
     <!-- this is where handlebars will inject its templates -->
     <!-- this is like a php include statement -->
 
     {{!-- SE VA A RENDERIZAR AQUI POR QUE TIENE 3 BRACKETS, LOS QUE TIENEN DOS SON LOS QUE SE RENDERIZAN EN ESTE --}}
-    
+
     {{{ body }}}
 
 
     </main>
-    
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="https://unpkg.com/vue-router@3.5.1/dist/vue-router.js"></script>
-    <script type="module" src="scripts/main.js"></script>
-    
+
+    {{> scripts}}
+
 </body>
 </html>
