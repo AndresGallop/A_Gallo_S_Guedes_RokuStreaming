@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    background:#1e2434;
+    color:#fff;
+    font-family:'Roboto',sans-serif;
+    font-size:16px;
+    background: radial-gradient(circle, rgb(100, 30, 140) 30%,
+    rgb(50, 5, 110) 100%);
+    background-size: 400%;
+    animation: gradient 15s ease infinite;
+    z-index:0 !important;
+}
+
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.main_body{
+    margin:0;
+}
+
+input[type=text] {
+    color:rgb(40, 10, 70);
+    font-size:1.2em;
+    font-weight:bold;
+}
+
+input[type=password] {
+    color:rgb(40, 10, 70);
+    font-size:1.2em;
+    font-weight:bold;
+}
+
+*::placeholder{
+    font-size:0.8em;
+    color:white;
+    font-weight:100;
+}
+
+h1{
+    font-family:'Roboto',sans-serif;
+}
+h2{
+    font-family:'Roboto',sans-serif;
+}
+h3{
+    font-family:'Roboto',sans-serif;
+}
+h4{
+    font-family:'Roboto',sans-serif;
+}
+h5{
+    font-family:'Roboto',sans-serif;
+}
+p{
+    font-family:'Roboto',sans-serif;
+}
+
+.messagerror{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(230, 196, 46, 0.75);
+    width: 100%;
+    height: 50px;
+}
+
+.decored{
+    text-decoration: underline;
+    cursor: pointer;
+}

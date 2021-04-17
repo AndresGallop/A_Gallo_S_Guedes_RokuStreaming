@@ -1,0 +1,116 @@
+.media_selector_wrapper{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:100vw;
+    height:100vh;
+    .media_selector_item {
+        display:flex;
+        flex-direction:column;
+        overflow:hidden;
+        width:100%;
+        height:100%;
+        h1{
+            font-size:4.5em;
+            text-align:center;
+            writing-mode: vertical-lr;
+            margin:15px;
+            z-index:5 !important;
+            height:30vh;
+            text-shadow:0 0 50px rgba(0, 0, 0, 1);
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .media_selector_wrapper{
+        flex-direction:row;
+        .media_selector_item {
+            height:100vh;
+            h1{
+                margin-top:88vh;
+                font-size: 5.5em;
+                writing-mode:horizontal-tb;
+                color: black;
+                -webkit-text-fill-color: rgba(255, 255, 255, 0.2);
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: rgb(255, 255, 255);
+                text-shadow:0 0 100px rgba(0, 0, 0, 0.4);
+            }
+            &:hover{
+                background-color:rgba(255, 255, 255, 0.3);
+                h1{
+                    -webkit-text-fill-color: rgba(255, 255, 255, 0.9);
+                    text-shadow:0 0 100px rgba(0, 0, 0, 1);
+                }
+            }
+        }
+    }
+}
+
+.adl_tv{
+    background-color:rgba(135, 50, 140, 0.3);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url(http://sgs-design.com/temp/imgs/0_MediaSelector_Mob_Adlt_TV.png);
+    // Using host to load those for now, just until we figure out what's wrong with the paths within the project
+}
+.adl_movies{
+    background-color:rgba(155, 70, 160, 0.3);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url(http://sgs-design.com/temp/imgs/0_MediaSelector_Mob_Adlt_Movies.png);
+    // Using host to load those for now, just until we figure out what's wrong with the paths within the project
+}
+.adl_music{
+    background-color:rgba(135, 50, 140, 0.3);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url(http://sgs-design.com/temp/imgs/0_MediaSelector_Mob_Adlt_Music.png);
+    // Using host to load those for now, just until we figure out what's wrong with the paths within the project
+}
+.kids_tv{
+    background-image:url();
+}
+.kids_movies{
+    background-image:url();
+}
+.kids_music{
+    background-image:url();
+}
+
+@media only screen and (min-width: 1000px){
+    .adl_tv{
+        background-image:url(http://sgs-design.com/temp/imgs/0_MediaSelector_Web_Adlt_TV_BW.png);
+        transition:0.4s;
+        &:hover{
+            background-image:url(http://sgs-design.com/temp/imgs/0_MediaSelector_Web_Adlt_TV.png);
+        }
+    }
+    .adl_movies{
+        background-image:url(http://sgs-design.com/temp/imgs/0_MediaSelector_Web_Adlt_Movies_BW.png);
+        transition:0.4s;
+        &:hover{
+            background-image:url(http://sgs-design.com/temp/imgs/0_MediaSelector_Web_Adlt_Movies.png);
+        }
+    }
+    .adl_music{
+        background-image:url(http://sgs-design.com/temp/imgs/0_MediaSelector_Web_Adlt_Music_BW.png);
+        transition:0.4s;
+        &:hover{
+            background-image:url(http://sgs-design.com/temp/imgs/0_MediaSelector_Web_Adlt_Music.png);
+        }
+    }
+    .kids_tv{
+        background-image:url();
+    }
+    .kids_movies{
+        background-image:url();
+    }
+    .kids_music{
+        background-image:url();
+    }
+}

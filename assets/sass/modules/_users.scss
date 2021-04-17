@@ -1,0 +1,57 @@
+.users_content_wrapper {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:100vh;
+    .users_content_align{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        flex-wrap:wrap;
+        .profile-thumb {
+            margin: 0 20px 20px 20px;
+            width: 150px;
+            height: 180px;
+            cursor: pointer;
+            display: flex;
+            flex-direction:column;
+            transition:0.4s;
+            &:hover{
+                transform: scale(1.05);
+            }
+            img {
+                height:150px;
+                width:150px;
+                border-radius: 5px;
+                margin-bottom:-12px;
+                transition:0.8s;
+                &:hover{
+                    border:1px solid rgba(255, 255, 255, 0.5);
+                }
+            }
+            .profilenames {
+                font-size:1em;
+                font-weight:100;
+                text-align:center;
+                cursor:default;
+            }
+        }
+        .user_plus_sign_wrapper{
+            width:170px;
+            margin-left:20px;
+            .users_plus_sign {
+                height:200px;
+                width:70px;
+                transition:0.2s;
+                opacity:40%;
+                margin-left:40px;
+                margin-top: -20px;
+                cursor:pointer;
+                &:hover{
+                    transform: scale(1.05);
+                    opacity:80%;
+                }
+            }
+        }
+    }
+}
