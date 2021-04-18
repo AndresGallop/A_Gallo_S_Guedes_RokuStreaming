@@ -5,7 +5,7 @@ export default {
 
     template: `
     
-    <section class="main_body">
+    <section class="main_body body_kids_music">
         <div class="hero_wrapper">
             <div class="music_title">
                 <h1>Now Playing:</h1>

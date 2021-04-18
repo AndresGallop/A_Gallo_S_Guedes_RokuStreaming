@@ -18,7 +18,6 @@ import MediaChooseKids from './components/TheMediaChooseKids.js';
 
 import SignUpComponent from './components/TheSignUpComponent.js';
 import AddProfileComponent from './components/AddProfileComponent.js';
-import TheFullMovie from './components/FullMovieComponent.js';
 
     console.log('fired!');
 
@@ -42,8 +41,7 @@ import TheFullMovie from './components/FullMovieComponent.js';
             { path: '/mediaoptionskids', name: 'mediaoptionskids', component: MediaChooseKids, props: true },
 
             { path: '/signup', name: 'signup', component: SignUpComponent },
-            { path: '/addprofile', name: 'addprofile', component: AddProfileComponent },
-            { path: '/fullmovie', name: 'fullmovie', component: TheFullMovie, props: true }
+            { path: '/addprofile', name: 'addprofile', component: AddProfileComponent }
 
         ]
     });

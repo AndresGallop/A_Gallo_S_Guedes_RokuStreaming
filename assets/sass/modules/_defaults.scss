@@ -11,6 +11,45 @@ body{
     z-index:0 !important;
 }
 
+.body_kids_tv{
+    margin:0;
+    background:#1e2434;
+    border-bottom: 1px solid rgb(120, 65, 165);
+    color:#fff;
+    font-family:'Roboto',sans-serif;
+    font-size:16px;
+    background: rgb(120, 65, 165);
+    background-size: 400%;
+    animation: gradient 15s ease infinite;
+    z-index:0 !important;
+}
+.body_kids_movies{
+    margin: 0;
+    background:#1e2434;
+    border-bottom: 1px solid rgb(240, 180, 40);
+    color:#fff;
+    font-family:'Roboto',sans-serif;
+    font-size:16px;
+    background: rgb(240, 180, 40);
+    background-size: 400%;
+    animation: gradient 15s ease infinite;
+    z-index:0 !important;
+}
+.body_kids_music{
+    margin: 0;
+    background:#1e2434;
+    border-bottom: 1px solid rgb(220, 40, 40);
+    color:#fff;
+    font-family:'Roboto',sans-serif;
+    font-size:16px;
+    background:  rgb(220, 40, 40);
+    background-size: 400%;
+    animation: gradient 15s ease infinite;
+    z-index:0 !important;
+}
+
+
+
 @keyframes gradient {
     0% {background-position: 0% 50%;}
     50% {background-position: 100% 50%;}

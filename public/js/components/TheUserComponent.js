@@ -8,7 +8,7 @@ export default {
         <div class="card rounded" @click="navToHome()">
             <div class="card-body text-center">
                 <img :src="'images/' + liveuser.user_picture" class="rounded-circle img-fluid">
-                <p>{{ liveuser.user_name }}</p>
+                <p>{{ liveuser.user_fname }}</p>
             </div>
         </div>
     </section>`,
@@ -17,12 +17,9 @@ export default {
         // check if there's an avatar
        // this.liveuser.user_picture = (this.liveuser.user_picture) ? this.liveuser.user_picture : "temp_avatar.jpg";
        if (this.liveuser.user_picture == null) {
-           
-        if(this.liveuser.kids !== null){
-        this.liveuser.user_picture = "Aladdin.jpg";
-        }else{
-            this.liveuser.user_picture = "ALF.jpg";
-        }
+
+            this.liveuser.user_picture = 'defaultpic.jpg';
+        
        }
     },
 

@@ -24,6 +24,9 @@ export default {
                     <input id="user_name" name="user_name" class="login_input" type="text" placeholder="Name" v-model="userData.username">
                 </div>
                 <div class="otions_form_row">
+                    <input id="user_name" name="user_fname" class="login_input" type="text" placeholder="Nickname" v-model="userData.nickname">
+                </div>
+                <div class="otions_form_row">
                     <input id="user_pass" name="user_pass" class="login_input" type="password" placeholder="Password" v-model="userData.password">
                 </div>
                 <br>
@@ -53,6 +56,7 @@ data() {
     return {
         userData: {
             username: "",
+            nickname: "",
             password: "",
             email: "",
             kid:""
@@ -74,9 +78,14 @@ methods: {
         //debugger;
         if (this.userData.username !=""){
 
+            if(this.userData.kid !== ''){
+
+                this.userData.nickname = this.userData.nickname + ' (kid)';
+            }
+
                     let url = `/ums/admin/signup`,
                     //userData = new FormData(document.querySelector("form"));
-                    userData = JSON.stringify({username: this.userData.username, password: this.userData.password, email: this.userData.email , kid: this.userData.kid});
+                    userData = JSON.stringify({username: this.userData.username, nickname: this.userData.nickname, password: this.userData.password, email: this.userData.email , kid: this.userData.kid});
 
                     fetch(url, {
                         method: 'POST',
