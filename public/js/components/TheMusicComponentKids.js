@@ -84,11 +84,11 @@ methods: {
     },
 
     filtermusic(era){
-        this.filteredMedia = this.retrievedMedia.filter(music => music.music_era === (era));
+        this.filteredMedia = this.retrievedMedia.filter(music => music.music_era === (era) && music.kids !== null);
     },
 
     filtermusic(era){
-        this.filteredMedia = this.retrievedMedia.filter(music => music.music_era.includes(era));
+        this.filteredMedia = this.retrievedMedia.filter(music => music.music_era.includes(era) && music.kids !== null);
     }
 
 }
