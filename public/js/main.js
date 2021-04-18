@@ -4,7 +4,9 @@
 import TheLoginComponent from './components/TheLoginComponent.js';
 import AllUsers from './components/TheAllUsersComponent.js';
 import HomeComponent from './components/TheHomeComponent.js';
+import HomeComponentKids from './components/TheHomeComponentKids.js';
 import MusicComponent from './components/TheMusicComponent.js';
+import MusicComponentKids from './components/TheMusicComponentKids.js';
 import TVShowsComponent from './components/TheTVShowComponent.js';
 
 import TVShowsComponentKids from './components/TheTVShowComponentKids.js';
@@ -27,7 +29,9 @@ import TheFullMovie from './components/FullMovieComponent.js';
             { path: "/", name: 'root', component: TheLoginComponent},
             { path: "/users", name: 'users', component: AllUsers},
             { path: '/home', name: 'home', component: HomeComponent, props: true },
+            { path: '/homekids', name: 'homekids', component: HomeComponentKids, props: true },
             { path: '/music', name: 'music', component: MusicComponent, props: true },
+            { path: '/musickids', name: 'musickids', component: MusicComponentKids, props: true },
             { path: '/tvshows', name: 'tvshows', component: TVShowsComponent, props: true },
 
             { path: '/tvshowskids', name: 'tvshowskids', component: TVShowsComponentKids, props: true },
