@@ -6,8 +6,14 @@ import AllUsers from './components/TheAllUsersComponent.js';
 import HomeComponent from './components/TheHomeComponent.js';
 import MusicComponent from './components/TheMusicComponent.js';
 import TVShowsComponent from './components/TheTVShowComponent.js';
+
+import TVShowsComponentKids from './components/TheTVShowComponentKids.js';
+
 import SettingsComponent from './components/TheSettingsComponent.js';
 import MediaChoose from './components/TheMediaChoose.js';
+
+import MediaChooseKids from './components/TheMediaChooseKids.js';
+
 import SignUpComponent from './components/TheSignUpComponent.js';
 import AddProfileComponent from './components/AddProfileComponent.js';
 import TheFullMovie from './components/FullMovieComponent.js';
@@ -23,8 +29,14 @@ import TheFullMovie from './components/FullMovieComponent.js';
             { path: '/home', name: 'home', component: HomeComponent, props: true },
             { path: '/music', name: 'music', component: MusicComponent, props: true },
             { path: '/tvshows', name: 'tvshows', component: TVShowsComponent, props: true },
+
+            { path: '/tvshowskids', name: 'tvshowskids', component: TVShowsComponentKids, props: true },
+
             { path: '/settings', name: 'settings', component: SettingsComponent },
             { path: '/mediaoptions', name: 'mediaoptions', component: MediaChoose, props: true },
+
+            { path: '/mediaoptionskids', name: 'mediaoptionskids', component: MediaChooseKids, props: true },
+
             { path: '/signup', name: 'signup', component: SignUpComponent },
             { path: '/addprofile', name: 'addprofile', component: AddProfileComponent },
             { path: '/fullmovie', name: 'fullmovie', component: TheFullMovie, props: true }

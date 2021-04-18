@@ -17,14 +17,28 @@ export default {
         // check if there's an avatar
        // this.liveuser.user_picture = (this.liveuser.user_picture) ? this.liveuser.user_picture : "temp_avatar.jpg";
        if (this.liveuser.user_picture == null) {
-        this.liveuser.user_picture = "temp_avatar.jpg";
+           
+        if(this.liveuser.kids !== null){
+        this.liveuser.user_picture = "Aladdin.jpg";
+        }else{
+            this.liveuser.user_picture = "ALF.jpg";
+        }
        }
     },
 
     methods: {
         navToHome() {
+
+            if (this.liveuser.kids !== null ){
+
+            this.$router.push({ name: "mediaoptionskids", params: { currentuser: this.liveuser }});
+            window.localStorage.setItem('cacheduser', JSON.stringify(this.liveuser));
+        
+        }else{
+
             this.$router.push({ name: "mediaoptions", params: { currentuser: this.liveuser }});
             window.localStorage.setItem('cacheduser', JSON.stringify(this.liveuser));
+        }
             
         },
 
