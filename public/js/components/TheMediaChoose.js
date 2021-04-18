@@ -23,7 +23,6 @@ export default {
                 </div>
             </div>
         </section>
-        <img src="../../images/0_MediaSelector_Web_Adlt_TV.png" alt="selector_bg">
 	`,
 
 

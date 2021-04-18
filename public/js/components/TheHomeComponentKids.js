@@ -5,7 +5,7 @@ export default {
 
     template: `
     
-    <section class="main_body">
+    <section class="main_body body_kids_movies">
 
         <div class="hero_wrapper">
             <video width="100vw" height="100vh" autoplay loop :src="'./video/' + currentMediaDetails.movies_trailer"></video>
@@ -15,8 +15,8 @@ export default {
             </div>
         </div>
 
-        <div class="gradient_wrapper"></div>
-        <div class="gradient_reverse_wrapper"></div>
+        <div class="kids_movies_gradient_wrapper"></div>
+        <div class="kids_movies_gradient_reverse_wrapper"></div>
 
         <section class="category_gallery_wrapper">
 

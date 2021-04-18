@@ -15,12 +15,12 @@
     @media only screen and (min-width: 1000px){
         .category_filter_select{
             h2 {
-                color:rgb(223, 150, 255);
-                font-size:2.4em;
-                margin-right:35px;
+                color:rgba(255, 255, 255, 0.6);
+                font-size:3.5em;
+                margin-right:55px;
                 &:hover{
                     color:rgb(255, 255, 255);
-                    transform:scale(1.05);
+                    transform:scale(1.1);
                 }
             }
         }
