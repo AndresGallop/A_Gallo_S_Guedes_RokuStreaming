@@ -89,11 +89,11 @@ methods: {
     },
 
     filtermovies(era){
-        this.filteredMedia = this.retrievedMedia.filter(movie => movie.movies_era === (era));
+        this.filteredMedia = this.retrievedMedia.filter(movie => movie.movies_era === (era) && movie.kids == null);
     },
     
     filtermovies(era){
-        this.filteredMedia = this.retrievedMedia.filter(movie => movie.movies_era.includes(era));
+        this.filteredMedia = this.retrievedMedia.filter(movie => movie.movies_era.includes(era) && movie.kids == null);
     }
 }
 }

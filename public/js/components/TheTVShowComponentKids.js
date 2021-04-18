@@ -89,11 +89,11 @@ methods: {
     },
 
     filtertvshows(era){
-        this.filteredMedia = this.retrievedMedia.filter(tvshow => tvshow.tvshows_era === (era) && tvshow.Kids !== null);
+        this.filteredMedia = this.retrievedMedia.filter(tvshow => tvshow.tvshows_era === (era) && tvshow.kids !== null);
     },
     
     filtertvshows(era){
-        this.filteredMedia = this.retrievedMedia.filter(tvshow => tvshow.tvshows_era.includes(era) && tvshow.Kids !== null);
+        this.filteredMedia = this.retrievedMedia.filter(tvshow => tvshow.tvshows_era.includes(era) && tvshow.kids !== null);
     }
 }
 }
